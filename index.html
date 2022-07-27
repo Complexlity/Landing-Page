@@ -4,28 +4,72 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="contianer">
-    <div class="header">
-      <div class="logo">Header Logo</div>
-      <div class="menu">
-        <ul>
+  <div class="container">
+    
+    <div class="hero grid">
+      
+      <div class="logo flex">Header Logo</div>
+      <div class="menu flex">
+        <ul class="flex">
           <li>header link one</li>
           <li>header link two</li>
           <li>header link three</li>
         </ul>
       </div>
+    
+      <div class="about flex">ABOUT</div>
+      <div class="image flex">IMAGE</div>
     </div>
-    <div class="hero">
-      <div class="about"></div>
-      <div class="image"></div>
+    
+    <div class="information"> 
+      <h1 class="title">Some random information</h1>
+      <div class="items flex">
+        <div class="item">
+          <div class="box">BOX 1</div>
+          <p class="subtext">SUBTEXT 1</p>
+        </div>
+
+        <div class="item">
+          <div class="box">BOX 2</div>
+          <p class="subtext">SUBTEXT 4</p>
+        </div>
+
+        <div class="item">
+          <div class="box">BOX 3</div>
+          <p class="subtext">SUBTEXT 3</p>
+
+        </div>
+        <div class="item">
+          <div class="box">BOX 4</div>
+          <p class="subtext">SUBTEXT 4</p>
+
+        </div>
+      </div>
     </div>
-    <div class="information"></div>
-    <div class="quote"></div>
-    <div class="contact"></div>
-    <div class="footer"></div>
+    
+    <div class="quote flex"> 
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint placeat id, optio consectetur, est inventore sunt aliquam, eveniet earum reprehenderit ex quas provident ipsa eaque quasi hic ipsam repudiandae exercitationem possimus ullam nihil asperiores voluptas laborum. Distinctio, ut odit repellendus consequatur iste nobis blanditiis, necessitatibus praesentium dignissimos enim labore animi.</p>
+      <blockquote >-Written and decoded by complexlity</blockquote>
+    </div>
+    
+    <div class="contact flex flex-center"> 
+      <div class="contact-card flex flex-center">
+        <div class="call">
+          
+         <p>Tenetur saepe minus, ad voluptate consequatur maiores eum. </p>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam inventore voluptates nihil.</p>
+        </div>
+        <div class="button flex flex-center"><a href="#">Sign up</a></div>
+      
+      </div>
+    
+      </div>
+    
+    <div class="footer flex flex-center"> Copyright  The Odin Project 2021</div>
   </div>
 </body>
 </html>

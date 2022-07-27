@@ -1,0 +1,170 @@
+/* General */
+:root{
+  --primary-color:#3882f6;
+  --secondary-color:#1f2937 ;
+}
+
+*{
+  margin:0;
+  box-sizing:border-box;
+}
+
+body {
+  text-align:center;
+
+  background-color:#eee;
+  min-height:100vh;
+}
+
+/* Utility */
+.flex {
+  display:flex;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display:grid;
+}
+
+/* Container */
+.container {
+  border:1px solid black;
+  width:100%;
+  
+}
+
+.container > div {
+  border:1px solid red;
+  padding-inline: 10vw;
+}
+
+/* Top Section */
+.hero {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 40px 20rem;
+  background-color: var(--secondary-color);
+  color:white;
+}
+
+.hero > div {
+  width: 100%;
+  align-items: center;
+}
+
+
+.hero >div:nth-of-type(even){
+   justify-content: flex-end;
+}
+
+.hero .logo {
+  font:24px 900;
+  color:#f9faf8;
+}
+
+
+.hero .menu {
+  grid-column: span 3;
+}
+.hero ul{
+  list-style-type: none;
+  gap:20px;
+  justify-content: space-between;
+}
+
+.hero ul a {
+  font:18px #e5e7eb;
+}
+
+.about, .image {
+  grid-column: span 2;
+}
+
+/* Information Section */
+.information{
+  background-color: white;
+}
+.information  * {
+   margin:20px 0;
+}
+
+.information h1{
+  font:36px bolder;
+  color:#1f2937;
+}
+
+.items {
+  justify-content: center;
+  gap:40px;
+}
+
+.items .box {
+  width:150px;
+  aspect-ratio: 1;
+  border-radius: 15px;
+  border: 4px solid var(--primary-color);
+}
+
+
+.quote {
+  flex-direction: column;
+  padding:50px;
+  font-family: sans-serif;
+  background-color:#e5e7eb;
+}
+
+
+.quote p {
+  margin:10px 0;
+  text-align: start;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 300;
+  color:#1f2937;
+}
+
+.quote blockquote{
+  align-self: flex-end;
+  font-weight: bolder;
+}
+
+.contact{
+  padding:2rem 0;
+}
+
+.contact .contact-card {
+  gap:40px;
+  width:800px;
+  padding:20px 100px;
+  height:auto;
+  background-color:var(--primary-color);
+  border-radius: 15px;
+}
+
+.contact .contact-card *{
+  color:white;
+}
+
+
+.contact .contact-card .call {
+  text-align: start;
+}
+
+.contact .contact-card .button {
+  width:120px;
+  height:30px;
+  border:1px solid white;  
+  border-radius: 100vw;
+}
+
+.contact .contact-card .button a {
+  text-decoration: none;
+}
+
+.footer {
+  background-color: var(--secondary-color);
+  height:90px;
+}
