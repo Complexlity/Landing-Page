@@ -2,6 +2,10 @@
 :root{
   --primary-color:#3882f6;
   --secondary-color:#1f2937 ;
+  --color-one:#f9faf8;
+  --color-two:#e5e7eb;
+  --plain:white;
+  
 }
 
 *{
@@ -11,8 +15,6 @@
 
 body {
   text-align:center;
-
-  background-color:#eee;
   min-height:100vh;
 }
 
@@ -46,54 +48,68 @@ body {
 .hero {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 40px 20rem;
+  column-gap: 20px;
+  row-gap: 20px;
   background-color: var(--secondary-color);
-  color:white;
 }
 
 .hero > div {
   width: 100%;
   align-items: center;
+  border:2px solid orange;
 }
 
 
-.hero >div:nth-of-type(even){
-   justify-content: flex-end;
-}
+
 
 .hero .logo {
   font:24px 900;
-  color:#f9faf8;
+  color:var(--color-one)
 }
 
 
 .hero .menu {
   grid-column: span 3;
+  justify-content: flex-end;
+  
 }
 .hero ul{
   list-style-type: none;
-  gap:20px;
-  justify-content: space-between;
+  gap:10vw;
+  
 }
 
-.hero ul a {
-  font:18px #e5e7eb;
+.hero ul li {
+  font:18px;
+  color:var(--color-two);
 }
 
 .about, .image {
   grid-column: span 2;
 }
 
-/* Information Section */
-.information{
-  background-color: white;
+.hero .about h1{
+  font-size: 48px;
+  font-weight:900;
+  color:var(--color-one);
 }
+
+.hero .image {
+  justify-content:center ;
+  width:500px;
+  aspect-ratio:2 /1;
+  background:rgba(255,255,255,0.5);
+
+}
+/* Information Section */
+
 .information  * {
    margin:20px 0;
 }
 
 .information h1{
   font:36px bolder;
-  color:#1f2937;
+  color:var(--secondary-color);
 }
 
 .items {
@@ -113,7 +129,7 @@ body {
   flex-direction: column;
   padding:50px;
   font-family: sans-serif;
-  background-color:#e5e7eb;
+  background-color:var(--color-two);
 }
 
 
@@ -123,7 +139,7 @@ body {
   font-size: 36px;
   font-style: italic;
   font-weight: 300;
-  color:#1f2937;
+  color:var(--secondary-color);
 }
 
 .quote blockquote{
@@ -145,7 +161,7 @@ body {
 }
 
 .contact .contact-card *{
-  color:white;
+  color:var(--plain);
 }
 
 
@@ -156,7 +172,8 @@ body {
 .contact .contact-card .button {
   width:120px;
   height:30px;
-  border:1px solid white;  
+  border:1px solid var(--plain);  
+  background-color: var(--primary-color);
   border-radius: 100vw;
 }
 
